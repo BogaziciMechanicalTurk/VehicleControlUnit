@@ -1,3 +1,11 @@
+/*
+ * Reads Hall Effect sensors on BLDC
+ * Attaches an interrupt to each Hall Effect state change
+ * States change exactly once in every 1/6th of rotator turn
+ * 1 wheel turn is 24 times motor rotator turn
+ * 1 Rotator turn is 6 times a signal change
+ */
+
 // Interrupt pins on an Arduino Mega are; 
 // 2, 3, 18, 19, 20, 21
 #include "RunningMedian.h"
